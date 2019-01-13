@@ -1,6 +1,7 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+  <h1>Users</h1>
   <% @users.each do |user| %>
     <div class="col-md-4">
       <div class="thumbnail">
@@ -9,9 +10,17 @@
         <strong>Email:</strong><p><%= user.email %></p>
         <strong>Created at:</strong><p><%= user.created_at %></p>
         <strong>Last update:</strong><p><%= user.updated_at %></p>
-        <p><%= link_to 'Show', user %></p>
-        <p><%= link_to 'Edit', edit_user_path(user) %></p>
-        <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+        <div class="btn-group">
+          <%= link_to 'Show', user, class:"btn btn-primary" %>
+        </div>
+        <div class="btn-group">
+          <%= link_to 'Edit', edit_user_path(user), class:"btn btn-primary" %>
+        </div>
+        <div class="btn-group">
+          <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-primary" %>
+        </div>
       </div>
     </div>
   <% end %>
+</div>
