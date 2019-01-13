@@ -24,6 +24,16 @@ textarea {
   margin-bottom: 10px;
 }
 
+.btn-primary {
+  background-color: #542e91;
+  border-color: #542e91;
+}
+
+.btn-primary:hover {
+  background-color: #8d64ce;
+  border-color: #8d64ce;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,4 +84,35 @@ p {
 }
 .navbar-inverse .navbar-right li a {
   color: #fddc06;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
 }
