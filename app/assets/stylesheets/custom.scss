@@ -25,14 +25,14 @@ textarea {
 }
 
 .btn-primary {
-  background-color: #542e91;
-  border-color: #542e91;
-  color: #fddc06;
+  background-color: #542e91 !important;
+  border-color: #542e91 !important;
+  color: #fddc06 !important;
 }
 
 .btn-primary:hover {
-  background-color: #8d64ce;
-  border-color: #8d64ce;
+  background-color: #8d64ce !important;
+  border-color: #542e91 !important;
 }
 
 .thumbnail {
@@ -79,8 +79,12 @@ p {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 15px;
   font-weight: bold;
+}
+
+#logo img {
+  width: 80px;
+  height: 70px;
 }
 
 #logo:hover {
@@ -93,6 +97,10 @@ p {
 }
 .navbar-inverse .navbar-right li a {
   color: #fddc06;
+}
+
+.navbar-right {
+  padding-top: 10px;
 }
 
 /* footer */
@@ -124,8 +132,6 @@ footer ul li {
   margin-left: 15px;
   padding-right: 10px;
 }
-
-/* forms */
 
 
 #error_explanation {
