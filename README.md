@@ -12,38 +12,45 @@ Clone or download repository and run:
 ```
 $ bundle install --without production
 $ bundle exec rails db:migrate
+$ rails server
 ```
-**CRUD*
 
-Get all users
-# GET /users
-# GET /users.json
+Open:
+```
+http://localhost:3000/
+```
+
+**CRUD**
+
+# Get all users
+GET /users
+GET /users.json
 
 **GET - http://localhost:3000/**
 
-Get user by id
-# GET /users/1
-# GET /users/1.json
+#  Get user by id
+GET /users/1
+GET /users/1.json
 
 **GET - http://localhost:3000/1**
 
-Create user
-# POST /users
-# POST /users.json
+#  Create user
+POST /users
+POST /users.json
 
 **POST - http://localhost:3000/**
 
 *body = { "givenName":"","familyName":"","email":"" }*
 
-delete user by id
-# DELETE /users/1
-# DELETE /users/1.json
+#  Delete user by id
+DELETE /users/1
+DELETE /users/1.json
 
 **DELETE - http://localhost:3000/1**
 
-update user by id
-# PATCH/PUT /users/1
-# PATCH/PUT /users/1.json
+# Update user by id
+PATCH/PUT /users/1
+PATCH/PUT /users/1.json
 
 **PUT - http://localhost:3000/1**
 
