@@ -103,6 +103,25 @@ p {
   padding-top: 10px;
 }
 
+.pagination {
+  display: inline;
+  padding: 1px;
+}
+
+.pagination .active a {
+  background-color: #542e91;
+  border-color: #542e91;
+}
+
+.pagination .active a:hover {
+  background-color: #542e91;
+  border-color: #542e91;
+}
+
+.pagination li a {
+  color: #542e91;
+}
+
 /* footer */
 
 footer {
