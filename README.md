@@ -26,19 +26,19 @@ http://localhost:3000/
 GET /users
 GET /users.json
 
-**GET - http://localhost:3000/**
+**GET - http://localhost:3000/users**
 
 #  Get user by id
 GET /users/1
 GET /users/1.json
 
-**GET - http://localhost:3000/1**
+**GET - http://localhost:3000/users/1**
 
 #  Create user
 POST /users
 POST /users.json
 
-**POST - http://localhost:3000/**
+**POST - http://localhost:3000/users/new**
 
 *body = { "givenName":"","familyName":"","email":"" }*
 
@@ -46,13 +46,13 @@ POST /users.json
 DELETE /users/1
 DELETE /users/1.json
 
-**DELETE - http://localhost:3000/1**
+**DELETE - http://localhost:3000/users/1**
 
 # Update user by id
 PATCH/PUT /users/1
 PATCH/PUT /users/1.json
 
-**PUT - http://localhost:3000/1**
+**PUT - http://localhost:3000/users/1**
 
 *body = { "givenName":"","familyName":"","email":"" }*
 
